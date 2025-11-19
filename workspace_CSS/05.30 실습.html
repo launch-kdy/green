@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div-1{
+      border: 1px solid black;
+      background-color:rgb(182, 221, 243);
+    }
+    span{
+      color: rgb(255, 0, 0);
+      font-size: 13px;
+    }
+  </style>
+
+</head>
+<body>
+  <table>
+    <!-- 회원 기본정보 -->
+      <tr class="div-1">
+        <td colspan="2"> <span><i><b>(*필수입력)</i></span> 회원 기본정보</td>
+      </tr>
+      <!-- *아이디 -->
+      <tr>
+        <td>*아이디:</td>
+        <td>
+          <input type="text" placeholder="4~12자의 영문 대소문자,숫자만 입력"> <input type="button" value="아이디 검사">
+        </tr>
+      </tr>
+    <tr>
+      <!-- *비밀번호 -->
+      <td>*비밀번호:</td>
+      <td>
+        <input type="password"> 4~12자의 영문 대소문자의 숫자로만 입력
+      </td>
+    </tr>
+    <!-- *비밀번호확인 -->
+    <tr>
+      <td>*비밀번호확인:</td>
+      <td>
+        <input type="password"> <input type="button" value="비밀번호 확인">
+      </td>
+    </tr>
+    <tr>
+    <!--*메일주소 -->
+      <td>*메일주소:</td>
+      <td>
+        <input type="text"> <input type="button" value="메일 확인">
+      </td>
+    </tr>
+    <tr>
+    <!--*이름-->
+      <td>*이름:</td>
+      <td>
+        <input type="text">
+      </td>
+    </tr>
+    <tr>
+    <!-- 개인신상정보 -->
+      <td>개인 신상 정보</td>
+    </tr>
+    <tr>
+    <!-- 주민등록번호 -->
+      <td>*주민등록번호 :</td>
+      <td>
+        <input type="text"> - <input type="text"> <input type="button" value="확인"> 예 123456-1234567
+      </td>
+    </tr>
+    <tr>
+    <!-- 생일 -->
+      <td>생일 :</td>
+      <td>
+        <input type="text">년<input type="text">월 <input type="text">일
+      </td>
+    </tr>
+    <tr>
+    <!-- 주소 -->
+      <td>주소 :</td>
+      <td>
+        <input type="text"> <input type="button" value="우편번호 찾기"> <br>
+        <input type="text"> <input type="text">
+      </td>
+    </tr>
+    <tr>
+    <!-- 관심분야 -->
+      <td>관심분야:</td>
+      <td>
+        <input type="checkbox">컴퓨터<input type="checkbox">인터넷<input type="checkbox">여행<input type="checkbox">영화감상<input type="checkbox">음악감상
+      </td>
+    </tr>
+    <tr>
+    <!-- 자기소개 -->
+      <td>자기소개:</td>
+      <td>
+        <textarea rows="5" cols="80"></textarea>
+      </td>
+    </tr>
+  </table> <br>
+    <!-- submit -->
+  <input type="button" value="회원 가입"> <input type="button" value="회원 가입">
+</body>
+</html>

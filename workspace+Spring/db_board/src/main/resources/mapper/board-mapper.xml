@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<!-- namespace에는 xml파일과 연결할 Mapper interface 파일명을 패키지를 포함하여 적어주세요 -->
+
+<!--링크 달아주기-->
+<mapper namespace="com.green.db_board.mapper.BoardMapper">
+
+    <!--resultMap 만들기-->
+    <resultMap id="board" type="com.green.db_board.dto.BoardDTO">
+        <id     column="BOARD_NUM" property="boardNum"/>
+        <result column="TITLE" property="title"/>
+        <result column="WRITER" property="writer"/>
+        <result column="CONTENT" property="content"/>
+        <result column="READ_CNT" property="readCnt"/>
+        <result column="CREATE_DATE" property="createDate"/>
+    </resultMap>
+
+    <!--자유게시판-->
+    <select id="getBoardList" resultMap="board">
+        SELECT BOARD_NUM
+            , TITLE
+            , WRITER
+            , READ_CNT
+            , CREATE_DATE
+        FROM BOARD
+        ORDER BY CREATE_DATE DESC
+    </select>
+
+    <!-- 게시글 작성 페이지-->
+    <insert id="insertBoard">
+        INSERT INTO BOARD (
+            TITLE
+            , WRITER
+            , CONTENT
+        ) VALUES (
+            #{title}
+            , #{writer}
+            , #{content}
+        )
+    </insert>
+
+    <!-- 게시글 상세정보 페이지 (조회)-->
+    <select id="getBoard" resultMap="board">
+        SELECT BOARD_NUM
+            , TITLE
+            , WRITER
+            , CONTENT
+            , READ_CNT
+            , CREATE_DATE
+        FROM BOARD
+        WHERE BOARD_NUM = #{boardNum}
+    </select>
+
+    <!--게시글 상세정보 페이지 (삭제)-->
+    <delete id="deleteBoard">
+        DELETE FROM BOARD
+        WHERE BOARD_NUM = #{boardNum}
+    </delete>
+
+    <!--조회수(READ_CNT)1증가-->
+    <update id="updateReadCnt">
+        UPDATE BOARD
+        SET
+            READ_CNT = READ_CNT + 1
+        WHERE BOARD_NUM = #{boardNum}
+    </update>
+
+    <!--게시글 수정 페이지-->
+    <update id="updateBoard">
+        UPDATE BOARD
+        SET
+            TITLE = #{title}
+            , CONTENT = #{content}
+        WHERE BOARD_NUM = #{boardNum}
+    </update>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

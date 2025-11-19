@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  gap: 32px;
+  background: url('/car4_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Pretendard', sans-serif;
+}
+
+/* 테이블 */
+.car_list_table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 3px;
+  background-color: rgba(39, 26, 26, 0.613);
+  color: rgb(251, 253, 227);
+  overflow: hidden;
+}
+
+
+.car_list_table td,
+.car_list_table th {
+  padding: 6px;
+  vertical-align: middle;
+  border: 2px solid rgba(255, 255, 71, 0.6);
+}

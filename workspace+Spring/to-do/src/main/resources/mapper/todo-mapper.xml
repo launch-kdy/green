@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<!-- namespace에는 xml파일과 연결할 Mapper interface 파일명을 패키지를 포함하여 적어주세요 -->
+<mapper namespace="com.green.to_do.TodoMapper">
+    <resultMap id="todo" type="com.green.to_do.TodoDTO">
+        <id     column="TODO_NUM"   property="todoNum"/>
+        <result column="TODO_TITLE" property="todoTitle"/>
+    </resultMap>
+
+    <select id="getTodoList" resultMap="todo">
+        SELECT TODO_NUM
+            , TODO_TITLE
+        FROM TODO
+    </select>
+
+    <!-- 
+        새로운 할 일을 데이터베이스에 추가하는 쿼리
+        @param todoTitle 등록할 할 일의 제목 (String 타입)
+    -->
+    <insert id="addTodo">
+        INSERT INTO TODO (
+            TODO_TITLE
+        ) VALUES (
+            #{todoTitle}
+        )
+    </insert>
+
+    <!-- 
+        특정 할 일을 데이터베이스에서 삭제하는 쿼리
+        @param todoNum 삭제할 할 일의 고유 번호 (int 타입)
+        
+        동작 방식:
+        1. TODO 테이블에서 조회
+        2. WHERE 절로 TODO_NUM이 파라미터로 전달받은 todoNum과 일치하는 행을 찾음
+        3. 해당 행을 테이블에서 완전히 삭제
+        
+        예시: todoNum이 5로 전달되면
+        DELETE FROM TODO WHERE TODO_NUM = 5 가 실행됨
+    -->
+    <delete id="deleteTodo">
+        DELETE FROM TODO
+        WHERE TODO_NUM = #{todoNum}
+    </delete>
+
+    <update id="updateTodo">
+        UPDATE TODO
+        SET
+            TODO_TITLE = #{todoTitle}
+        WHERE TODO_NUM = #{todoNum}
+    </update>
+
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

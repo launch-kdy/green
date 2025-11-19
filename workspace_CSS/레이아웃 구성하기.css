@@ -1,0 +1,35 @@
+div{
+  border: 2px solid black;
+}
+
+.container1{
+  width: 500px;
+  height: 350px;
+  margin: 30px auto;
+}
+
+.container1 > div:nth-child(1){
+  border-color: aqua;
+  height: 15%;
+}
+
+.container1 > div:nth-child(2){
+  border-color: rgb(255, 100, 203);
+  height: 70%;
+  display: flex;
+}
+
+.side{
+  width: 20%;
+  border-color: rgb(255, 100, 203);
+}
+
+.content{
+  width: 80%;
+  border-color: rgb(255, 100, 203);
+}
+
+.container1 > div:nth-child(3){
+  border-color: rgb(250, 236, 106);
+  height: 15%;
+}

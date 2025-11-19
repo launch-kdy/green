@@ -1,0 +1,31 @@
+.container{
+  border: 1px solid black;
+  width: 600px;
+  height: 400px;
+  margin: 30px;
+
+  display: grid;
+  /* grid-template-columns: 100px 200px; */
+  /* grid-template-columns: 20% 30% 40%; */
+  /* grid-template-columns: 1fr 2fr 3fr; */
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  
+  gap: 10px;
+
+  /* 세로정렬 */
+  align-content: center;
+  /* 아이템 안에서 바로 정렬 */
+  justify-content: center;
+  /* 아이템 안에서의 세로 정열 */
+  align-items: start;
+  /* 아이템 안에서의 가로 정열 */
+  justify-items: start;
+
+.item{
+  border: 1px solid red;
+}
+
+.d1{
+  justify-self: center;
+}

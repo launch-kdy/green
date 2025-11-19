@@ -1,0 +1,37 @@
+.container{
+  text-align: center;
+}
+
+.title div{
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.btn_div{
+  text-align: center;
+  margin-top: 16px;
+}
+
+.content_div table{
+  width: 100%;
+  text-align: center;
+  border: 1px black;
+}
+
+.content_div tr, .content_div td{
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+}
+
+.content_div {
+  padding: 2px 6px;
+}
+
+.content_div input{
+  width: 100%;
+}
+
+.content_div textarea{
+  width: 100%;
+  resize: none;
+}

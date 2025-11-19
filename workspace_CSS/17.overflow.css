@@ -1,0 +1,25 @@
+.box{
+  width: 300px;
+  height: 150px;
+  border: 1px solid black;
+  margin: 50px;
+}
+
+.d1{
+  overflow: visible;
+}
+
+.d2{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.d3{
+  /* 내용의 넘침 유무와 상관없이 무조건 스크롤 생성 */
+  overflow: scroll;
+}
+
+.d4{
+  /* 내용의 넘침 유무와 상관없이 무조건 스크롤 생성 */
+  overflow: auto;
+}

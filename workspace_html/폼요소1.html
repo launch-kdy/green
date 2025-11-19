@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2> 폼 요소 다루기 1</h2>
+
+  <!-- 글자 안내믄 placeholder-->
+  <input type="text" placeholder="아이디를 입력하세요."> <br>
+  <!-- 글자 미리 적혀있으며 (수정가능) value -->  
+  <input type="text" value="아이디를 입력하세요." readonly> <br>
+  <!-- 글자 미리 적혀있으며 수정(불가) value -->
+  <input type="text" value="아이디를 입력하세요." disabled> <br>
+  <!-- 비번 -->
+  <input type="password"> <br>
+  <!-- 숫자 -->
+  <input type="number" value="1" min="1" max="5"> <br>
+  <!-- 날짜 -->
+  <input type="date"> <br>
+  <!-- 색 -->
+  <input type="color"> <br>
+  <!-- 입력 가능한 최대 글자 수 -->
+  <input type="text" maxlength="5"> <br>
+  <hr>
+  <!-- [ ■ ] 미리 체크 -->
+  <input type="checkbox" checked> 동의
+  <input type="checkbox"> 동의
+  <input type="checkbox"> 동의 <br>
+  <!-- [ ● ] 둘중에 하나만 체크 -->
+  <input type="radio" name="yn"> 가끔 그렇다
+  <input type="radio"name="yn"> 매우 그렇다 <br>
+  <!-- [ ● ] 셋중에 하나만 체크 -->
+  <input type="radio" name="abc"> 좋음
+  <input type="radio" name="abc"> 보통
+  <input type="radio" name="abc"> 나쁨 <br>
+
+  <!-- 버튼 만들기 -->
+  <input type="button" value="가입" onclick="alert('hi')"> <br>
+  <!-- 버튼 만들기 2 -->
+  <button type="button">가입</button> <br>
+  <!-- 텍스트 에리아 -->
+  <textarea rows="" cols=""></textarea> <br>
+  <!-- 셀렉트 -->
+  <select>
+    <option>1</option>
+    <option selected>2</option>
+    <option>3</option>
+  </select>
+
+
+</body>
+</html>

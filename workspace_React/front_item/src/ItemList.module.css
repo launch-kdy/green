@@ -1,0 +1,30 @@
+.list_table{
+  width: 600px;
+  margin: 30px auto;
+}
+
+.list_table tr, .list_table td{
+  border: 1px solid black;
+}
+
+.total_div{
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.total_div > div:first-child{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.total_div > div:last-child{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+.btn_div{
+  margin-top: 20px;
+  text-align: center;
+}

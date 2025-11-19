@@ -1,0 +1,9 @@
+.CartList_container{
+  margin: 30px;
+}
+
+.CartList_container > table {
+  text-align: center;
+  border: 1px solid black;
+  
+}

@@ -1,0 +1,107 @@
+.cotainer{
+  width: 1000px;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  margin: 50px auto;
+  /* 
+    box-shadow : 그림자
+    첫번째 픽셀 : 수평방향 그림자 생성
+        양수입력 -> 그림자가 우측으로 이동
+        음수입력 -> 그림자가 좌측으로 이동
+    두번째 픽셀: 수직방향 그림자 생성
+        양수입력 -> 그림자가 아래로 이동
+        음수입력 -> 그림자가 위으로 이동
+    세번째 픽셀: 그림자의 블러처리 (숫자가 커질수록 그림자가 흐려진다)
+    네번째 픽셀: 그림자의 크기
+    마지막 요소: 그림자의 색
+  */
+  box-shadow: 3px 3px 1px 1px #dddddd;
+  padding: 20px 12px;
+}
+
+.content{
+  display: flex;
+}
+
+.left{
+  width: 50%;
+  padding: 8px;
+  background-color: #dddddd;
+  margin: 16px;
+  border-radius: 12px;
+}
+
+.left > div{
+  margin-bottom: 10px;
+}
+
+.right{
+  width: 50%;
+  padding: 8px;
+  margin: 16px;
+}
+
+/* input[type="text"], input[type="password"]{
+  width: 100%;
+} */
+
+/* input 태그 중 type 속성이 checkbox인 것만 제외 */
+/* input 태그는 border 밖에 outline이라는 두번째 테두리가 존재 */
+input:not([type="checkbox"]){
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid blueviolet;
+  /* outline: none; input 태그는 이 속성이 기본값으로 적용됨 */
+}
+
+/* 
+  클릭시 border의 두께를 변경하면 크기가 변경되어 화면이 깨진다.
+  클릭시 테두리의 변화를 주려면 outline을 사용한다.
+*/
+input:not([type="checkbox"]):focus{
+  outline: 1px solid blueviolet;
+}
+
+.login-btn{
+  background-color: lightcoral;
+  border: none;
+  padding: 4px 16px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.login-btn:hover{
+  cursor: pointer;
+  background-color: rgb(219, 118, 118);
+}
+
+.login-btn:active{
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+ul span{
+  color: lightgreen;
+}
+
+.detail{
+  background-color: skyblue;
+  color: white;
+  text-align: center;
+  padding: 6px 0px;
+  border-radius: 4px;
+}
+
+.detail:hover{
+  cursor: pointer;
+  background-color: rgb(112, 182, 209);
+}
+
+.right p{
+  text-align: center;
+  color: green;
+  font-size: 0.7rem;
+}

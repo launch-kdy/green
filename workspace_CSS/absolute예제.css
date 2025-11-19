@@ -1,0 +1,20 @@
+img{
+  width: 200px;
+  height: 200px;
+  border: 5px solid rgb(255, 145, 0);
+  border-radius: 50%;
+
+  position: absolute;
+}
+
+
+.img2{
+  left: 100px;
+}
+.img3{
+  left: 200px;
+}
+.img4{
+  left: 300px;
+}
+

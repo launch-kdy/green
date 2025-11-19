@@ -1,0 +1,29 @@
+.d1{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 200px;
+  font-size: 3rem;
+  background-color: aquamarine;
+  
+  position: absolute;
+  top:20px;
+  left:20px;
+  z-index: 2;
+}
+
+.d2{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 200px;
+  font-size: 3rem;
+  background-color: rgb(72, 234, 255);
+  
+  position: absolute;
+  top:40px;
+  left:40px;
+  z-index: 1;
+}

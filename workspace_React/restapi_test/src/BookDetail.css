@@ -1,0 +1,35 @@
+.detail-div{
+  margin-top: 20px;
+  background-color: rgb(255, 224, 246);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.detail-table{
+  width: 500px; 
+  border: 1px solid black;
+}
+
+.detail-table td:nth-child(1), .detail-table td:nth-child(3){
+  background-color: #61ff90;
+}
+
+.detail-table tr:nth-child(1) td{
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.detail-table tr:nth-child(2) td{
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.detail-table tr:nth-child(3) td[colspan="3"]{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.detail-table tr, .detail-table td{
+  border: 1px solid white;
+}

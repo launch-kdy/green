@@ -1,0 +1,17 @@
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+
+// 세팅 화면
+
+const SettingScreen = () => {
+  return (
+    <View>
+      <Text>세팅 화면</Text>
+    </View>
+  )
+}
+
+export default SettingScreen
+
+const styles = StyleSheet.create({})

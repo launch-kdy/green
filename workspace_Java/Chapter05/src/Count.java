@@ -1,0 +1,30 @@
+/*
+static : 공용 변수, 메서드
+각각의 객체가 각각 가지는 변수가 아니라,
+모든 객체가 공용으로 사용하는 변수
+static변수 값 (초기화) 생성 -> 객체생성(생성자 호출)
+static이 붙은 변수, 메서드는 객체 생성 전에 초기화(생성)이 이루어진다.
+< static이 붙은 변수와 메서드는 생성자와 1도 관련없다 >
+static으로 선언된 변수와 메서드는 객체명. 으로 접근하지 않는다
+그럼 어떻게 접근해야하나 > static이 붙은 변수와 메서드는 클래스명. 으로 접근한다.
+- static 이 붙은 변수의 초기화는 생성자를 이용하지 않는다.
+*/
+
+public class Count {
+  static int cnt;
+  int price;
+
+  //static은 별도의 초기화 문법을 지닌다.
+  static{
+    cnt = 5;
+  }
+
+  public Count() {
+    //cnt = 5;
+    price = 0; //멤버변수의 초기화는 생성자에서 진행하는 것이 맞다
+    price++;
+    System.out.println(price);
+  }
+
+
+}

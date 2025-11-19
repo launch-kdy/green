@@ -1,0 +1,109 @@
+.container{
+  width: 1200px;
+  margin: 0px auto;
+}
+
+.header{
+  height: 100px;
+  background-color: #0c51a6;
+  color: white;
+  display: flex;
+  /* space-between 2개 (공간생성 후) 각각 가쪽배치 */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > ul{
+  display: flex;
+  /* li 간격을 만들기 위해 ul태그 강제로 넓이 설정헤서 늘리기 */
+  width: 600px;
+  /* 아이템 하나 하나가 동일한 간격으로 띄어지게 하기 */
+  justify-content: space-around;
+  background-color: #0a4288;
+  padding: 16px 0px;
+}
+
+.banner > img{
+  width: 100%;
+  height: 100%;
+  /* 아래 빈칸 없애기 위해서 */
+  display: block;
+}
+
+.banner{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner > div{
+  position: absolute;
+  background-color: rgb(0,0,0,0.4 );
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+/* 이상함 */
+.content{
+  display: flex;
+}
+
+.reserve> img{
+  width: 100%;
+  height: 100%;
+  /* 아래 빈칸 없애기 위해서 */
+  display: block;
+}
+
+.content > div{
+  border: 1px solid black;
+  width: 50%;
+}
+
+.notice{
+  background-color: #e5f1ff;
+  padding: 10px;
+}
+
+.notice h2{
+ margin-bottom: 8px;
+}
+
+.notice > table{
+  width: 100%;
+}
+
+td{
+  padding: 6px 0px;
+}
+
+.reserve > div{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  /* 요소 크기의 반만큼 가로, 세로 이동 */
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  padding: 30px, 30px;
+}
+
+.footer{
+  display: flex;background-color: lightgray;
+}
+
+.footer > h1{
+  width: 20%;
+}
+
+.footer > div{
+  width: 80%;
+  text-align: center;
+}
+
+.footer ul{
+  display: inline flex;
+  gap: 16px;
+}

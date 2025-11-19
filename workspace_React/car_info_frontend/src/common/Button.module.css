@@ -1,0 +1,61 @@
+.btn{
+  color: white;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+}
+
+.blue{
+  background-color: #0d6efd;
+}
+
+.blue:hover{
+  cursor: pointer;
+  background-color: #0c5dec;
+}
+
+.gray{
+  background-color: #7a838b;
+}
+
+.gray:hover{
+  cursor: pointer;
+  background-color: #69727a;
+}
+
+.green{
+  background-color: #188452;
+}
+
+.green:hover{
+  cursor: pointer;
+  background-color: #077341;
+}
+
+/* 새로 추가한 버튼색인데 무슨색할지 못 정해서 custom */
+.custom{
+  background-color: #ee342e;
+}
+
+.custom:hover{
+  cursor: pointer;
+  background-color: #5f2d2d;
+}
+
+/* 또 새로 추가한 버튼색인데 무슨색할지 못 정해서 custom_other */
+.custom_other{
+  background-color: #49191d;
+}
+
+.custom_other:hover{
+  cursor: pointer;
+  background-color: #e3e1e1c2;
+}
+
+.disabled{
+  opacity: 0.5;
+  cursor: default !important;
+}
+

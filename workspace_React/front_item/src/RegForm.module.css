@@ -1,0 +1,29 @@
+.container{
+  width: 400px;
+  margin: 30px auto;
+}
+
+.container select,
+.container input[type='text'],
+.container textarea{
+  width: 100%;
+}
+
+.container > div{
+  margin-bottom: 12px;
+}
+
+.container textarea{
+  /* resize : 크기 못 바꾸게 함 */
+  resize: none;
+  height: 80px;
+}
+
+.btn_div{
+  text-align: right;
+}
+
+.not_valid{
+  color: red;
+  font-size: 0.7rem;
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--mapper 연결 링크 (그린컴) 달기-->
+
+<mapper namespace="com.green.back_item.mapper.BackItemMapper">
+
+    <!--베이스가 될 resultMap 만들기 + Type 은 DTO-->
+    <resultMap id="backItem" type="com.green.back_item.dto.BackItemDTO">
+        <!-- (ID) 첫줄은 primary key 로 기준 잡아주기 -->
+        <id     column="ITEM_NUM" property="itemNum"/>
+        <result column="ITEM_CATEGORY" property="itemCategory"/>
+        <result column="ITEM_NAME" property="itemName"/>
+        <result column="ITEM_PRICE" property="itemPrice"/>
+        <result column="ITEM_INTRO" property="itemIntro"/>
+        <result column="ITEM_STATUS" property="itemStatus"/>
+        <result column="REG_DATE" property="regDate"/>
+    </resultMap>
+
+    <!-- 상품목록 페이지 (조회) -->
+    <select id="getBackItemList" resultMap="backItem">
+        SELECT ITEM_NUM
+            , ITEM_CATEGORY
+            , ITEM_NAME
+            , ITEM_PRICE
+            , ITEM_STATUS
+            , REG_DATE
+        FROM ITEM
+        ORDER BY REG_DATE DESC
+    </select>
+
+    <!-- 상세정보 페이지 (조회) -->
+    <select id="getBackItemDetail" resultMap="backItem">
+        SELECT ITEM_NUM
+            , ITEM_CATEGORY
+            , ITEM_NAME
+            , ITEM_PRICE
+            , ITEM_STATUS
+            , REG_DATE
+            , ITEM_INTRO
+        FROM ITEM
+        WHERE ITEM_NUM = #{itemNum}
+    </select>
+
+    <!-- 상세정보 페이지 (삭제) -->
+    <delete id="deleteItem">
+        DELETE FROM ITEM
+        WHERE ITEM_NUM = #{itemNum}
+    </delete>
+
+    <!-- 상품등록 페이지 (등록) -->
+    <insert id="insertItem">
+        INSERT INTO ITEM (
+            ITEM_CATEGORY
+            , ITEM_NAME
+            , ITEM_PRICE
+            , ITEM_INTRO
+            , ITEM_STATUS
+        ) VALUES (
+            #{itemCategory}
+            , #{itemName}
+            , #{itemPrice}
+            , #{itemIntro}
+            , #{itemStatus}
+        )
+    </insert>
+
+    <!-- 상품등록 페이지 (수정) -->
+    <update id="updateItem">
+        UPDATE ITEM
+        SET
+            ITEM_CATEGORY = #{itemCategory}
+            , ITEM_NAME = #{itemName}
+            , ITEM_PRICE = #{itemPrice}
+            , ITEM_STATUS = #{itemStatus}
+            , ITEM_INTRO = #{itemIntro}
+        WHERE ITEM_NUM = #{itemNum}
+    </update>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

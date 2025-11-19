@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="000 reset 000.css">
+  <link rel="stylesheet" href="signup.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="real-container">
+    <h3 class="section-title">회원 가입</h3><br>
+    <table class="type-table">
+      <tr>
+        <td>회원구분 <span style="color: red;">*</span></td>
+        <td>
+          <input type="radio" name="type" checked>개인회원
+          <input type="radio" name="type">외국인회원(foreigner)
+        </td>
+      </tr>
+    </table>
+    <div class="flex-div">
+      <h3>기본정보</h3>
+      <p><span style="color: red;">*</span> 필수입력사항</p>
+    </div>
+    <table class="form-table">
+      <tr>
+        <td>아이디 <span style="color: red;">*</span></td>
+        <td><input type="text" class="ultra-max-text"> (영문소문자/숫자, 4~16자)</td>
+      </tr>
+      <tr>
+        <td>비밀번호 <span style="color: red;">*</span></td>
+        <td><input type="password" class="ultra-max-text"> (영문 대소문자/숫자/특수문자 중 2가지 이상조합,8~16자)</td>
+      </tr>
+      <tr>
+        <td>비밀번호 확인 <span style="color: red;">*</span></td>
+        <td><input type="password" class="ultra-max-text"></td>
+      </tr>
+      <tr>
+        <td>이름 <span style="color: red;">*</span></td>
+        <td><input type="text" class="ultra-max-text"></td>
+      </tr>
+      <tr>
+        <td>주소</td>
+        <td class="margin-input">
+          <div>
+            <input type="text" class="ultra-min-text">
+            <button>우편번호&nbsp;&nbsp;></button>
+          </div>
+          <input type="text" class="max-text"> 기본주소 <br>
+          <input type="text" class="max-text">  나머지주소 (선택입력가능)
+        </td>
+      </tr>
+      <tr>
+        <td>일반전화</td>
+        <td>
+          <select class="ultra-min-text">
+            <option>02</option>
+            <option>051</option>
+            <option>053</option>
+            <option>032</option>
+            <option>062</option>
+            <option>042</option>
+            <option>052</option>
+            <option>044</option>
+            <option>031</option>
+            <option>033</option>
+            <option>043</option>
+            <option>041</option>
+            <option>063</option>
+            <option>061</option>
+            <option>054</option>
+            <option>055</option>
+            <option>064</option>
+          </select> -
+          <input type="text" class="ultra-min-text"> -
+          <input type="text" class="ultra-min-text">
+        </td>
+      </tr>
+      <tr>
+        <td>휴대전화 <span style="color: red;">*</span></td>
+        <td>
+          <select class="ultra-min-text">
+            <option>010</option>
+            <option>011</option>
+            <option>012</option>
+            <option>013</option>
+            <option>014</option>
+            <option>015</option>
+            <option>016</option>
+            <option>017</option>
+            <option>018</option>
+            <option>019</option>
+            <option>080</option>
+            <option>060</option>
+            <option>0303</option>
+            <option>1588</option>
+            <option>1577</option>
+            <option>1566</option>
+            <option>1544</option>
+            <option>0502</option>
+            <option>0506</option>
+            <option>0505</option>
+            <option>1541</option>
+            <option>1595</option>
+            <option>08217</option>
+            <option>006</option>
+            <option>002</option>
+          </select> -
+          <input type="text" class="ultra-min-text"> -
+          <input type="text" class="ultra-min-text">
+        </td>
+      </tr>
+      <tr>
+        <td>SMS 수신여부 <span style="color: red;">*</span></td>
+        <td>
+          <input type="checkbox"> 동의함<br>
+          쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받을 수 있습니다.
+        </td>
+      </tr>
+      <tr>
+        <td>이메일 <span style="color: red;">*</span></td>
+        <td><input type="text" class="ultra-max-text"></td>
+      </tr>
+      <tr>
+        <td>이메일 수신여부 <span style="color: red;">*</span></td>
+        <td>
+          <input type="checkbox"> 동의함<br>
+          쇼핑몰에서 제공하는 유익한 이벤트 소식을 이메일로 받을 수 있습니다.
+        </td>
+      </tr>
+      <tr>
+        <td>평생회원</td>
+        <td>
+          <input type="radio" name="life" checked> 동의함
+          <input type="radio" name="life"> 동의안함<br>
+          <p>- 평생회원으로 가입하시면 <b>스타일맨</b> 회원 탈퇴 시까지 휴면회원으로 전환되지 않으며, 고객님의 개인정보가 안전하게 보관됩니다.</p>
+          <p>- 지금 평생회원으로 가입하시면 쿠폰혜택을 드립니다. (쿠폰혜택을 받으신 경우, 3개월간 평생회원을 유지하셔야 합니다.)</p>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <h3 class="section-title">추가정보</h3>
+    <br>
+    <table class="form-table">
+      <tr>
+        <td>생년월일 <span style="color: red;">*</span></td>
+        <td>
+          <input type="text" class="ultra-min-text"> 년
+          <input type="text" class="min-text"> 월
+          <input type="text" class="min-text"> 일
+          &nbsp;
+          <input type="radio" name="birth" checked> 양력
+          <input type="radio" name="birth"> 음력 (14세 미만 회원가입을 제한하고 있습니다.)
+        </td>
+      </tr>
+      <tr>
+        <td>성별</td>
+        <td>
+          <input type="radio" name="gender"> 남자
+          <input type="radio" name="gender"> 여자
+        </td>
+      </tr>
+      <tr>
+        <td>상의 사이즈</td>
+        <td>
+          <input type="checkbox"> 90~95
+          <input type="checkbox"> 100~105
+          <input type="checkbox"> 110~115
+          <input type="checkbox"> 120~125
+          <input type="checkbox"> 130~
+        </td>
+      </tr>
+      <tr>
+        <td>하의 사이즈</td>
+        <td>
+          <input type="checkbox"> 30~32
+          <input type="checkbox"> 33~34
+          <input type="checkbox"> 35~36
+          <input type="checkbox"> 37~38
+          <input type="checkbox"> 39~40
+          <input type="checkbox"> 42~
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

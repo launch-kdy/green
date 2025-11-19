@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6930b491-7464-4382-ad50-1122cc7f449c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend_shop/src/main/java/com/green/backend_shop/test/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legacy_board/src/main/java/com/green/legacy_board/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legacy_board/src/main/java/com/green/legacy_board/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legacy_board/src/main/java/com/green/legacy_board/controller/StudyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legacy_board/src/main/java/com/green/legacy_board/dto/BoardDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legacy_board/src/main/java/com/green/legacy_board/dto/MemberDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legacy_board/src/main/java/com/green/legacy_board/mapper/BoardMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legacy_board/src/main/java/com/green/legacy_board/mapper/MemberMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legacy_board/src/main/java/com/green/legacy_board/service/BoardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legacy_board/src/main/java/com/green/legacy_board/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legacy_board/src/main/resources/log4jdbc.log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legacy_board/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legacy_board/src/main/resources/mapper/mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legacy_board/src/main/resources/templates/board-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/to-do/src/main/java/com/green/to_do/TodoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/to-do/src/main/java/com/green/to_do/TodoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/to-do/src/main/java/com/green/to_do/TodoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/to-do/src/main/java/com/green/to_do/TodoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/to-do/src/main/java/com/green/to_do/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/to-do/src/main/resources/log4jdbc.log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/to-do/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/to-do/src/main/resources/mapper/todo-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend_shop/src/main/java/com/green/backend_shop/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend_shop/src/main/java/com/green/backend_shop/book/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend_shop/src/main/java/com/green/backend_shop/buy/controller/BuyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend_shop/src/main/java/com/green/backend_shop/buy/controller/BuyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_info_backend/src/main/java/com/green/car_info_backend/sales/controller/SaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/car_info_backend/src/main/java/com/green/car_info_backend/sales/controller/SaleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_info_backend/src/main/java/com/green/car_info_backend/sales/mapper/SaleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/car_info_backend/src/main/java/com/green/car_info_backend/sales/mapper/SaleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_info_backend/src/main/java/com/green/car_info_backend/sales/service/SaleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/car_info_backend/src/main/java/com/green/car_info_backend/sales/service/SaleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_info_backend/src/main/resources/mapper/sales-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/car_info_backend/src/main/resources/mapper/sales-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workspace_React/frontend_shop/src/pages/BookDetail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace_React/frontend_shop/src/pages/BookDetail.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="352EKHyeudvg9QkkEgTESuD62UU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/01-STUDY/dev/workspace/workspace+Spring"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6930b491-7464-4382-ad50-1122cc7f449c" name="Changes" comment="" />
+      <created>1762299700476</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762299700476</updated>
+    </task>
+    <servers />
+  </component>
+</project>

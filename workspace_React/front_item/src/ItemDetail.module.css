@@ -1,0 +1,8 @@
+.container{
+  width: 400px;
+  margin: 30px auto;
+}
+
+.list_table tr, td{
+  text-align: center;
+}

@@ -1,0 +1,92 @@
+body{
+  /* 전체배경 */
+  background-color: lightslategray;
+}
+
+.container{
+  /* 픽셀로 해도 800px 해도 상관없음 */
+  width: 80%;
+  background-color: white;
+  /* 위 30px 옆 알아서 균등하게 배분 auto */
+  margin: 30px auto;
+}
+
+.intro{
+  text-align: center;
+}
+
+.intro > p:nth-child(1){
+  background-color: lightpink;
+  width: 150px;
+  border-radius: 12px;
+  padding: 6px 0px;
+  color: white;
+  /* (글자 <p> 태그 / 블록) 이 가운데 오려면 margin: (상하), auto; 넣어주기 */
+  margin: 0px, auto;
+}
+
+/* 내가 진짜로 정렬하고 싶은 거의 -> '부모태그'에 적용 시키기 */
+.list{
+  /* '그리드' 배치 옵션 */
+  display: grid;
+  /* 행 4개(4) 1:1 비율(1fr) */
+  grid-template-columns: repeat(4, 1fr);
+  /* 열 2개를(2) 450px조정 (450px) */
+  grid-template-rows: repeat(2, 450px);
+  /* 그리드 위에 (공간 16px 띄우기) */
+  margin-top: 16px;
+  margin: 20px;
+  gap: 10px
+}
+
+.member{
+  /* (중요) 겹치고자하는 애의 부모태그에 position: (relative 디테일 적기) */
+  position: relative;
+}
+
+/* 이미 그리드를 설계했기때문에, 그리드에 사진을 그대로 100%의 비율로 넣기 */
+.member > img{
+  width: 100%;
+  height: 100%;
+  /* 비율을 안 망하게 하고 원본 그대로 그리드에 끼어 넣을 때 사진이 그리드보다 커서 잘려져도 상관없음  */
+  object-fit: cover;
+  /* ? ? */
+  object-position: center center;
+}
+
+.detail{
+  /* 글자가 들어가는 영역 */
+  background-color: rgb(0, 0, 0, 0.3);
+  color: white;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+
+  /* 옆으로 */
+  display: flex;
+  /* ?? */
+  flex-direction: column;
+  /* 주축 가운데*/
+  justify-content: center;
+  /* 새로 가운데 */
+  align-items: center;
+  gap:8px;
+  /* 그냥 있을 때는 안 보이게하기 = 투명하게 하기 */
+  opacity:0;
+  /* 여기서 적용하고 싶은 곳이 가상클래스가 없는 곳이 detail 이라서 (반응) transution: all 0.5 입력 */
+  transition: all 0.5s;
+}
+
+  /* (반응) 아이콘 색상변경 */
+.detail > div > span:hover{
+  cursor: pointer;
+  color: skyblue;
+}
+
+  /* (반응) 멤버라는 클래스 안에 자식 디테일에 손을 올리면 */
+.detail:hover{
+  opacity: 1;
+}

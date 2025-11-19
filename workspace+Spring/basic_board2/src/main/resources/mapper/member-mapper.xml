@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<!-- namespace에는 xml파일과 연결할 Mapper interface 파일명을 패키지를 포함하여 적어주세요 -->
+<mapper namespace="com.green.basic_board2.mapper.MemberMapper">
+
+    <!--resultMap 만들기 : 조회된 데이터를 자바로 가져오는 정의를 생성-->
+    <!-- 순서는 상관이 없다고 험    -->
+    <resultMap id="member" type="com.green.basic_board2.dto.MemberDTO">
+        <id     column="MEM_ID"     property="memId"/>
+        <result column="MEM_PW"     property="memPw"/>
+        <result column="MEM_NAME"   property="memName"/>
+        <result column="MEM_AGE"    property="memAge"/>
+        <result column="BIRTHDAY"   property="birthday"/>
+                                    <!-- property = MemberDTO 안에 선언된 멤버변수 -->
+    </resultMap>
+
+
+    <!--실습 3 회원등록-->
+    <insert id="join">
+        INSERT INTO BASIC_MEMBER (
+            MEM_ID
+            , MEM_PW
+            , MEM_NAME
+            , MEM_AGE
+            , BIRTHDAY
+        ) VALUES (
+            #{memId}
+            , #{memPw}
+            , #{memName}
+            , #{memAge}
+            , NOW()
+        )
+    </insert>
+
+    <!--select 태그는 반드시 데이터조회 (자료형을 잘 맞춰줘야 함)-->
+    <!--자료형 선언은 select + (resultType="자료형" / resultMap 속성)-->
+    <!-- resultType (1) : 조회된 데이터 중 '하나의 행 데이터'만 가져올 수 있다-->
+    <!-- resultType (2) : 자바가 기본적으로 제공하는 자료형을 사용할 때 적용-->
+    <!-- resultType (3) : ( int String double List)-->
+    <!-- resultMap (1) : 우리가 만든 자료형을 가져올 때 ex_ <멤버 DTO 등..> -->
+    <!-- ex) String-->
+    <select id="getMemberName" resultType="String">
+        SELECT MEM_NAME
+        FROM BASIC_MEMBER
+        WHERE MEM_ID = 'javaboy'
+    </select>
+
+    <!-- 여러개의 (같은 자료형) 결과가 조회값으로 나올 경우도, String -->
+    <select id="getMemberNameAll" resultType="String">
+        SELECT MEM_NAME
+        FROM BASIC_MEMBER
+    </select>
+
+    <!-- ex) int-->
+    <select id="getMemberAge" resultType="int">
+        SELECT MEM_AGE
+        FROM BASIC_MEMBER
+        WHERE MEM_ID = 'javaboy'
+    </select>
+
+    <!-- ex) int-->
+    <select id="getMember" resultMap="member">
+        SELECT MEM_ID
+            , MEM_PW
+            , MEM_NAME
+            , MEM_AGE
+            , BIRTHDAY
+        FROM BASIC_MEMBER
+        WHERE MEM_ID = 'java'
+    </select>
+
+    <select id="getMemberAll" resultMap="member">
+        SELECT MEM_ID
+            , MEM_NAME
+            , MEM_AGE
+        FROM BASIC_MEMBER
+    </select>
+
+    <select id="getMemberAll2" resultMap="member">
+        SELECT MEM_ID
+        , MEM_NAME
+        , MEM_AGE
+        FROM BASIC_MEMBER
+        WHERE MEM_AGE > #{memAge}
+    </select>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

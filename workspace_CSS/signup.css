@@ -1,0 +1,79 @@
+.real-container{
+  width: 1400px;
+  margin: 30px auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 2px solid #ccc;
+  margin-bottom: 30px;
+}
+
+td, th {
+  border: 1px solid #cccc
+}
+
+.form-table td:first-child,
+.type-table td:first-child {
+  width: 180px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* 셀 간격 */
+td {
+  padding: 10px;
+}
+
+/* 텍스트 입력 */
+input[type="text"],
+input[type="password"],
+select {
+  padding: 6px;
+  border: 1px solid #ccc;
+}
+
+/* 버튼 */
+button {
+  border: 1px solid #7777;
+  background-color: white;
+  padding: 4px 12px;
+}
+
+.flex-div{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.ultra-max-text{
+  width: 200px;
+}
+
+.max-text{
+  width: 400px;
+}
+
+.middle-text{
+  width: 63px;
+}
+
+.min-text{
+  width: 50px;
+}
+
+.ultra-min-text{
+  width: 70px;
+}
+
+.margin-input > div {
+  display: flex;
+  gap: 5px;
+}
+
+.margin-input > input {
+  margin-top: 5px;
+}
+

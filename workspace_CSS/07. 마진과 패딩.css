@@ -1,0 +1,32 @@
+.d1{
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.d2{
+  border: 1px solid black;
+  /* 상하, 좌우 */
+  padding: 20px 50px;
+}
+
+.d3{
+  border: 1px solid black;
+  padding-left: ;
+  padding-top: ;
+  padding-right: ;
+  padding-bottom: ;  
+}
+
+.d4{
+  border: 1px solid black;
+  margin: 20px;
+  /* 상하, 좌우 */
+  margin: 20px 40px;
+  margin-left: 100px;
+}
+
+.d5{
+  border: 1px solid black;
+  margin: 50px;
+  padding: 30px;
+}

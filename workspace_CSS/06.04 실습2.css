@@ -1,0 +1,46 @@
+.container{
+  width:750px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+}
+
+.title{
+  background-color: crimson;
+  color: aliceblue;
+  font-size:1.8rem;
+  border-radius: 6px;
+  text-align: center;
+  padding: 4px 0px;
+  margin: 20px auto;
+}
+
+
+thead > tr{
+  background-color: rgb(0, 153, 255);
+  color: aliceblue;
+  border-top: 4px solid black;
+}
+
+thead td{
+  padding: 8px;
+}
+
+tbody td{
+  padding: 18px 12px;
+  border: 1px solid #eeeeee;
+  vertical-align: middle;
+}
+
+tbody > tr{
+  border: 1px solid #eeeeee;
+}
+
+/* 내용이 들어있는 행애서 가장 마지막 열만 선택 */
+tbody > tr > td:last-child{
+  text-align: left;
+}
